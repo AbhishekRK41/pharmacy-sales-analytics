@@ -1,0 +1,6 @@
+# Never commit source data or personal information
+*.csv
+*Raw*Data*
+*Transaction*
+*.mp4
+*Authorization*
