@@ -18,7 +18,7 @@ Six months of a Bengaluru retail pharmacy's own billing data (1 Jan - 30 Jun 202
 | Forecasting | Linear trend, validated on a held-out month (MAE, MAPE) |
 | Safety stock | Safety stock and reorder points for high-revenue, unstable-demand products |
 
-The analysis was run in Python (pandas, NumPy, mlxtend, Matplotlib), with results consolidated in an Excel workbook.
+The capstone analysis was run in Python (pandas, NumPy, mlxtend, Matplotlib), with results consolidated in an Excel workbook.
 
 ## Headline findings
 
@@ -34,6 +34,17 @@ The analysis was run in Python (pandas, NumPy, mlxtend, Matplotlib), with result
 | [BDM_Capstone_Final_Report.pdf](BDM_Capstone_Final_Report.pdf) | Final capstone report: methods, results, recommendations |
 | [BDM_Capstone_Presentation.pdf](BDM_Capstone_Presentation.pdf) | Presentation slides |
 | [Pharmacy_Sales_Analysis_DataFree.xlsx](Pharmacy_Sales_Analysis_DataFree.xlsx) | Analysis workbook with all result tables and charts. Transaction-level data removed. |
+| [analysis_pipeline.ipynb](analysis_pipeline.ipynb) | Reproducible pipeline (RFM, Apriori, ABC-XYZ, forecast, safety stock) running on a **synthetic** dataset with the same structure |
+| [requirements.txt](requirements.txt) | Python dependencies for the notebook |
+
+## Run the notebook
+
+```bash
+pip install -r requirements.txt
+jupyter notebook analysis_pipeline.ipynb
+```
+
+The real transaction data cannot be published, so the notebook generates a synthetic dataset (fixed random seed) with the same columns and runs the full pipeline on it. It is an illustrative re-implementation of the method, **not the original analysis code**, and its numbers differ from the report above - for example, the RFM segment cut-offs are illustrative choices. To use it on your own data, replace the data-generation cell with a dataframe that has the same columns.
 
 ## Confidentiality
 
