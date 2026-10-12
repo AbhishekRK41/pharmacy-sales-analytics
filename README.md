@@ -27,6 +27,37 @@ The capstone analysis was run in Python (pandas, NumPy, mlxtend, Matplotlib), wi
 - **Chronic-therapy medicines are bought together.** Eight product pairs show lift between 1.42 and 1.57, a basis for bundled refill reminders.
 - **Overall revenue is forecastable; categories less so.** The hold-out MAPE for total monthly revenue is 3.73%, but Vitamins, Respiratory and Skin Care forecasts are unreliable with only six months of history.
 
+## Results at a glance
+
+Charts from the final report (real, aggregated results).
+
+**Customer segmentation (RFM)**
+
+<p>
+  <img src="rfm_segment_distribution.png" alt="Customers per RFM segment" width="48%">
+  <img src="rfm_revenue_share.png" alt="Revenue share by RFM segment" width="48%">
+</p>
+
+**Products bought together (market basket analysis)**
+
+<p>
+  <img src="market_basket_top_rules.png" alt="Top product association rules by lift" width="60%">
+</p>
+
+**Inventory priority (ABC and ABC-XYZ)**
+
+<p>
+  <img src="abc_pareto.png" alt="ABC Pareto chart of product revenue" width="48%">
+  <img src="abc_xyz_revenue_share.png" alt="Revenue share by ABC-XYZ class" width="48%">
+</p>
+
+**Forecasting (hold-out validation and July projection)**
+
+<p>
+  <img src="forecast_validation.png" alt="Forecast validation: trend fit vs actual revenue" width="48%">
+  <img src="revenue_with_july_forecast.png" alt="Monthly revenue with July forecast" width="48%">
+</p>
+
 ## Repository contents
 
 | File | What it is |
