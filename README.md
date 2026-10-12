@@ -67,6 +67,7 @@ Charts from the final report (real, aggregated results).
 | [Pharmacy_Sales_Analysis_DataFree.xlsx](Pharmacy_Sales_Analysis_DataFree.xlsx) | Analysis workbook with all result tables and charts. Transaction-level data removed. |
 | [analysis_pipeline.ipynb](analysis_pipeline.ipynb) | Reproducible pipeline (RFM, Apriori, ABC-XYZ, forecast, safety stock) running on a **synthetic** dataset with the same structure |
 | [requirements.txt](requirements.txt) | Python dependencies for the notebook |
+| [LICENSE-CODE](LICENSE-CODE) | MIT licence for the notebook code |
 
 ## Run the notebook
 
@@ -83,6 +84,10 @@ The transaction data was supplied by the business under written authorisation fo
 
 - The business's name, address and shopfront photo are **redacted** from the report and slides (shown as `[Pharmacy]`, `[Area]` and "Photo redacted").
 - The raw transaction data, customer names, phone numbers and customer IDs are **not included**. In the workbook, cells that originally read from the removed data hold their computed values; downstream formulas (cumulative share, ABC/XYZ class, support/confidence/lift, trend fit, MAPE, safety stock) remain live.
+
+## Licence
+
+The code in `analysis_pipeline.ipynb` and `requirements.txt` is released under the MIT licence (see [LICENSE-CODE](LICENSE-CODE)). The report, slides, workbook and charts are shared for viewing only; they are (c) 2026 Abhishek Ramesh Kumar, all rights reserved, and are not covered by that licence.
 
 ## Disclaimer
 
